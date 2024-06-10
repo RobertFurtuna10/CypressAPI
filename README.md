@@ -29,10 +29,10 @@ CypressAPI is a project designed to demonstrate API testing using Cypress. This 
    ```sh
    git clone https://github.com/AdrianPricopie/CypressAPI.git
    cd CypressAPI
-2.Run all the tests:
- ```sh
+2. Run all the tests:
+   ```sh
      npm test run
- ```
+   ```
 
 ### Types Available for Testing
 The QA Challenge API supports the following HTTP methods for testing: GET, POST and DELETE. Below are some examples of operations you can perform:
