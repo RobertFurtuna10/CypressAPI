@@ -114,3 +114,31 @@ The API returns a response with body `[{"succes":"1"}]`, indicating the deletion
 
 - ![Bug 2](https://github.com/AdrianPricopie/CypressAPI/blob/main/cypress/reports/html/screenshots/TestsDelete.js/Delete%20API%20Tests%20--%20Verify%20if%20we%20can%20delete%20an%20existing%20user%20with%20wrong%20key%20for%20id%20(failed).png)
 
+### Conclusion
+
+The CypressAPI project effectively demonstrates API testing using Cypress, validating various endpoints of the QA Challenge API. While most of the tests run successfully, two critical issues have been identified during testing. Below is a summary of the project's achievements and the issues encountered:
+
+#### Project Achievements
+
+- **Automated API Testing**: Successfully implemented Cypress to automate the testing of API endpoints.
+- **Comprehensive Test Scenarios**: Included a wide range of test scenarios to cover various use cases, ensuring robust validation.
+- **Easy Configuration**: Provided a simple setup and configuration process, allowing for quick initiation of tests.
+- **Detailed Reporting**: Utilized cypress-mochawesome-reporter to generate detailed test reports, showcasing the number of tests passed and failed.
+
+#### Test Results
+
+- **Total Tests**: 10
+- **Tests Passed**: 8
+- **Tests Failed**: 2
+
+#### Identified Issues
+
+1. **Issue with Inserting a User with Empty First Name and Last Name**:
+   - **Expected Behavior**: The API should return `success: "0"` when attempting to insert a user with empty first name and last name fields.
+   - **Actual Behavior**: The API returns `success: "1"`, indicating the insertion was incorrectly considered successful.
+
+2. **Issue with Deleting a User with Invalid ID Key**:
+   - **Expected Behavior**: The API should return a `null` response body when attempting to delete a user with an incorrect key for the user ID.
+   - **Actual Behavior**: The API returns `[{"succes":"1"}]`, indicating the deletion was incorrectly considered successful.
+
+
