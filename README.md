@@ -94,3 +94,23 @@ You get a success: "1" response body.
 ## Screenshots/Attachments
 
 - ![Bug 1](https://github.com/AdrianPricopie/CypressAPI/blob/main/cypress/reports/html/screenshots/TestsPost.js/Post%20API%20Tests%20--%20Validate%20inserting%20a%20user%20with%20empty%20firstname%20and%20lastname%20(failed).png)
+
+# issue Report: Unable to Delete User with Invalid ID Key
+
+## description
+The API endpoint for deleting a user returns a success response (`success: "1"`) even when an incorrect key for the user ID is provided. The expected behavior is to receive a null response, indicating failure.
+
+## Expected Behavior
+The API should return a null response body, indicating the deletion failed due to the incorrect ID key.
+
+## Actual Behavior
+The API returns a response with body `[{"succes":"1"}]`, indicating the deletion was successful despite the incorrect ID key.
+
+## Steps to Reproduce
+1. Call the API endpoint for deleting a user with an incorrect key for the user ID.
+2. Observe the response.
+
+## Screenshots/Attachments
+
+- ![Bug 2](https://github.com/AdrianPricopie/CypressAPI/blob/main/cypress/reports/html/screenshots/TestsDelete.js/Delete%20API%20Tests%20--%20Verify%20if%20we%20can%20delete%20an%20existing%20user%20with%20wrong%20key%20for%20id%20(failed).png)
+
