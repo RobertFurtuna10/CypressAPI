@@ -31,7 +31,7 @@ CypressAPI is a project designed to demonstrate API testing using Cypress. This 
    cd CypressAPI
 2. Run all the tests:
    ```sh
-     npm test run
+   npm test run
    ```
 
 ### Types Available for Testing
