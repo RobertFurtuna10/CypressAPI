@@ -7,7 +7,10 @@ CypressAPI is a project designed to demonstrate API testing using Cypress. This 
 - **Library Versions:**
     ```bash
      cypress-mochawesome-reporter
-    ```
+    
+   ```
+## Application under the test
+- The application under test is available at [QA Challenge API](https://qachallenge.ro/api/). This API provides various endpoints for testing purposes, allowing the validation of different functionalities and scenarios.
 
 
 
