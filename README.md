@@ -18,3 +18,19 @@ CypressAPI is a project designed to demonstrate API testing using Cypress. This 
 - **Automated API Testing**: Uses Cypress to automate the testing of API endpoints.
 - **Test Scenarios**: Includes comprehensive test scenarios to cover different use cases.
 - **Easy Configuration**: Simple setup and configuration to start testing immediately.
+
+## Getting Started
+
+### Prerequisites
+- Node.js
+- npm
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/AdrianPricopie/CypressAPI.git
+   cd CypressAPI
+2.Run all the tests:
+ ```sh
+     npm test run
+   
