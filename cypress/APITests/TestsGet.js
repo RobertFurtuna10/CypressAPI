@@ -65,7 +65,7 @@ describe("Get API Tests for all users and single user", () => {
 
   it("Get Single user positive testing", () => {
     const actionForSingleUser = "fetch_single";
-    const ValidId = "900"; // Aici folosim direct un ID valid pentru simplitate
+    const ValidId = "909"; // Aici folosim direct un ID valid pentru simplitate
 
     cy.request(
       `http://qachallenge.ro/api/test_api.php?action=${actionForSingleUser}&id=${ValidId}`
@@ -81,8 +81,8 @@ describe("Get API Tests for all users and single user", () => {
       expect(responseBody).to.have.property("first_name");
       expect(responseBody).to.not.have.property("id"); // Dacă nu ar trebui să fie prezent
       expect(responseBody).to.have.property("last_name");
-      expect(responseBody.first_name).to.equal("AAA");
-      expect(responseBody.last_name).to.equal("BBB");
+      expect(responseBody.first_name).to.equal("ggg");
+      expect(responseBody.last_name).to.equal("hhhh");
     });
   });
 
